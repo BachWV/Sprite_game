@@ -198,11 +198,11 @@ void print() {
     }
     // print score, blood, level
     char score_txt[20], blood_txt[20], level_txt[20], speed_txt[20], hint_txt[100];
-    sprintf_s(score_txt, "Score: %d", spriteUsr->get_score());
-    sprintf_s(blood_txt, "Blood: %d", spriteUsr->get_blood());
-    sprintf_s(level_txt, "Level: %d", level);
-    sprintf_s(speed_txt, "Your Speed: %d", usr_speed);
-    sprintf_s(hint_txt, "ESC:Quit  R:Restart  W:SpeedUp  S:SpeedDown");
+    sprintf(score_txt, "Score: %d", spriteUsr->get_score());
+    sprintf(blood_txt, "Blood: %d", spriteUsr->get_blood());
+    sprintf(level_txt, "Level: %d", level);
+    sprintf(speed_txt, "Your Speed: %d", usr_speed);
+    sprintf(hint_txt, "ESC:Quit  R:Restart  W:SpeedUp  S:SpeedDown");
     setTextSize(TEXT_SIZE);
     setTextColor(BLUE);
     paintText(0, 0, score_txt);
